@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ping Pong Game</title>
+	<style>
+		.game-screen {
+			width: 600px;
+			height: 400px;
+			border: 1px solid black;
+			position: relative;
+		}
+		.paddle {
+			width: 10px;
+			height: 80px;
+			background-color: red;
+			position: absolute;
+		}
+		.paddle-left {
+			top: 160px;
+			left: 0;
+		}
+		.paddle-right {
+			top: 160px;
+			right: 0;
+		}
+		.ball {
+			width: 20px;
+			height: 20px;
+			background-color: green;
+			border-radius: 50%;
+			position: absolute;
+			top: 190px;
+			left: 290px;
+		}
+		.score {
+			position: absolute;
+			top: 10px;
+			font-size: 24px;
+			font-weight: bold;
+		}
+		.player1-score {
+			left: 10px;
+		}
+		.player2-score {
+			right: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="game-screen">
+		<div class="paddle paddle-left"></div>
+		<div class=" paddle paddle-right"></div>
+		<div class="ball"></div>
+		<div class=" score player1-score">0</div>
+		<div class="score player2-score">0</div>
+	</div>
+	<script src="sample.js"></script>
+</body>
+</html>
